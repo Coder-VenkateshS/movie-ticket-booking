@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.face.controller.MainController">
+   <effect>
+      <Glow />
+   </effect>
+   <children>
+      <SplitPane dividerPositions="0.5" layoutX="165.0" layoutY="14.0" orientation="VERTICAL" prefHeight="800.0" prefWidth="1280.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="0.0" minWidth="0.0" prefHeight="148.0" prefWidth="1278.0">
+               <children>
+                  <TextField fx:id="username" layoutX="745.0" layoutY="59.0" promptText="Username" AnchorPane.rightAnchor="350.0" AnchorPane.topAnchor="60.0" />
+                  <PasswordField fx:id="password" layoutX="951.0" layoutY="59.0" promptText="Password" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="60.0" />
+                  <Label fx:id="lbluser" layoutX="745.0" layoutY="38.0" text="Username" AnchorPane.topAnchor="40.0" />
+                  <Label fx:id="lblpass" layoutX="951.0" layoutY="38.0" text="Password" AnchorPane.topAnchor="40.0" />
+                  <Button fx:id="signin" layoutX="1153.0" layoutY="59.0" mnemonicParsing="false" onAction="#signIn" text="Signin" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="60.0" />
+                  <Label fx:id="lblstatus" layoutX="745.0" layoutY="96.0" prefHeight="21.0" prefWidth="395.0" />
+                  <Text layoutX="741.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Don't you have an account?" />
+                  <Button fx:id="signup" layoutX="941.0" layoutY="115.0" mnemonicParsing="false" onAction="#clickSignUp" text="Sign Up" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
