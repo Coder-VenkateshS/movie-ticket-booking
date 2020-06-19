@@ -1,0 +1,54 @@
+body {
+  background: url("https://i1.faceprep.in/ProGrad/greeting-background.png");
+  background-size: cover;
+  background-color: skyblue;
+  font-family: 'germania one';
+}
+
+.card {
+  height: 80vh;
+  width: 80vw;
+  background: url("https://i1.faceprep.in/ProGrad/super-hero-background.png")repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  position: fixed;
+  margin: 10vh 10vw;
+}
+
+#superhero {
+  width: 40%;
+  min-width: 250px;
+  margin-bottom: 20px;
+}
+
+.button {
+  width: 100px;
+  height: 30px;
+  background: black;
+  color: white;
+  position: fixed;
+  margin-top: 230px;
+  font-size: 12px;
+}
+
+#back {
+  visibility: hidden;
+}
+
+p {
+  font-size: 2em;
+  text-align: center;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  p {
+      font-size: 1.5em;
+      padding: 20px;
+      text-align: center;
+  }
+}
