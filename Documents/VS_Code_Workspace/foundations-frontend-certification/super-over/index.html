@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Add your style inside the head part -->
+    <link rel="stylesheet" href="style.css">
+    <title>Super Over</title>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav>
+        <ul>
+            <li class="logo-text">
+                <img class = "logo-img" src="./assets/ipl_logo.png" alt=""/> </li>
+            <li>
+                <ul>
+                    <li><a href="#teams" class="nav-link">TEAMS</a></li>
+                    <li><a href="#fixtures" class="nav-link">FIXTURES</a></li>
+                    <li><a href="./game.html" class="nav-link">GAME PLAY</a></li>
+                    <li><a href="#pointstable" class="nav-link">POINTS TABLE</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <header id="teams">
+        <div>
+            <article>
+                <img class="logo" src="./assets/csk.png"/>
+                <h4>Chennai Super Kings</h4>
+                
+            </article>
+            <article>
+                <img class="logo" src="./assets/MI.png"/>
+                <h4>Mumbai Indians</h4>
+              
+            </article>
+            <article>
+                <img class="logo" src="./assets/Delhi.png"/>
+                <h4>Delhi DareDevilsD</h4>
+           
+            </article>
+            <article>
+                <img class="logo" src="./assets/KKR.png"/>
+                <h4>Kilkata Knight Riders</h4>
+                
+            </article>
+            <article>
+                <img class="logo" src="./assets/KXI.png"/>
+                <h4>Kings Eleven Punjab</h4>
+                
+            </article>
+            <article>
+                <img class="logo" src="./assets/SRH.png"/>
+                <h4>Sunrisers Hyderabad</h4>
+                
+            </article>
+
+        </div>
+    </header>
+    <section id="fixtures">
+        
+            <div class="flex container-fix">
+                <a name="schedule"></a>
+                <div class="flex qualifier">
+                    <div class="flex set">
+                        <div class="card1">
+                            <img class="csk-img" src="./assets/csk.png" alt="CSK">
+                        </div>
+                        <h3>VS</h3>
+                        <div class="card1 ">
+                            <img class="kkr-img" src="./assets/KKR.png" alt="KKR">
+                        </div>
+                    </div>
+                    <div class="flex set">
+                        <div class="card1">
+                            <img class="dc-img" src="./assets/Delhi.png" alt="DD">
+                        </div>
+                        <h3>VS</h3>
+                        <div class="card1">
+                            <img class="kxi-img" src="./assets/KXI.png" alt="KXI">
+                        </div>
+                    </div>
+                    <div class="flex set">
+                        <div class="card1">
+                            <img class="rcb-img" src="./assets/RCB.png" alt="RCB">
+                        </div>
+                        <h3>VS</h3>
+                        <div class="card1">
+                            <img class="rcb-img" src="./assets/RR.png" alt="RCB">
+                        </div>
+                    </div>
+                    <div class="flex set">
+                        <div class="card1">
+                            <img class="shr-img" src="./assets/SRH.png" alt="SHR">
+                        </div>
+                        <h3>VS</h3>
+                        <div class="card1">
+                            <img class="mi-img" src="./assets/MI.png" alt="MI">
+                        </div>
+                    </div>
+                </div>
+                <div class="flex semiFinal">
+                    <div class="flex set">
+                        <div class="card1">
+                            <img class="csk-img" src="./assets/csk.png" alt="CSK">
+                        </div>
+                        <h3>VS</h3>
+                        <div class="card1">
+                            <img class="kxi-img" src="./assets/KXI.png" alt="KXI">
+                        </div>
+                    </div>
+                    <div class="flex set">
+                        <div class="card1">
+                            <img class="rcb-img" src="./assets/RCB.png" alt="RCB">
+                        </div>
+                        <h3>VS</h3>
+                        <div class="card1">
+                            <img class="mi-img" src="./assets/MI.png" alt="MI">
+                        </div>
+                    </div>
+                </div>
+                <div class="flex final">
+                    <div class="flex set">
+                        <div class="card1">
+                            <img class="csk-img" src="./assets/csk.png" alt="CSK">
+                        </div>
+                        <h3>VS</h3>
+                        <div class="card1">
+                            <img class="mi-img" src="./assets/MI.png" alt="MI">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </section>
+<!--     
+    <section id="gameplay">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <img
+                        src="./assets/RCB.png"
+                        alt=""
+                        class="profile-icon"
+                        height="150px"
+                        width="150px"
+                    />
+                    <span class="name" id="team-1-name"></span>
+                    <div class="row round-runs" id="team-1-round-runs">
+                        <span class="col">-</span>
+                        <span class="col">-</span>
+                        <span class="col">-</span>
+                        <span class="col">-</span>
+                        <span class="col">-</span>
+                        <span class="col">-</span>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row score">
+                        <span id="team-1-score"></span>
+                        <span>-</span>
+                        <span id="team-2-score"></span>
+                    </div>
+                </div>
+                <div class="col">
+                    <img
+                        src="./assets/RR.png"
+                        alt=""
+                        class="profile-icon"
+                        height="150px"
+                        width="150px"
+                    />
+                    <span class="name" id="team-2-name"></span>
+                    <div class="row round-runs" id="team-2-round-runs">
+                        <span class="col">4</span>
+                        <span class="col">4</span>
+                        <span class="col">4</span>
+                        <span class="col">1</span>
+                        <span class="col">6</span>
+                        <span class="col">2</span>
+                    </div>
+                </div>
+            </div>
+           <div class="row">
+                <button
+                    id="strike-button"
+                    onclick="handleStrikeButtonClick()"
+                ></button>
+            </div> -->
+            <!-- <div class="row" id="result" hidden></div>
+        </div>
+    </section> --> 
+
+    <footer id="contact">
+        <p>Happy Coding ProGrad</p>
+    </footer>
+</body>
+</html>
